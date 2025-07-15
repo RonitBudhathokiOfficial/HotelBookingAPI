@@ -66,6 +66,22 @@ POST /seed
 POST /reset
 ```
 
+6. **Usage Walkthrough**
+
+To test the flow using Swagger UI or Postman:
+
+✅ Seed the hotel data using POST /seed
+
+✅ Get all hotels using GET /all or search by name using GET /search?name=... to find a hotel ID
+
+✅ Get available rooms using GET /{hotelId}/available-rooms?startDate=2025-08-01&endDate=2025-08-05&numberOfGuests=2
+
+✅ Book a room using POST /book — hotelId and roomId must be valid; bookingReference can be left empty; use yyyy-MM-dd date format
+
+✅ Retrieve the booking using GET /{bookingReference}
+
+✅ Verify room is booked — repeat step 3 to confirm the same room no longer appears in availability
+
 ---
 
 ## 🧪 Run Tests
