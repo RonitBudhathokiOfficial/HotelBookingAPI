@@ -86,7 +86,6 @@ This will run all unit tests using an in-memory EF Core database.
 | `GET /{hotelId}/available-rooms`  | Get available rooms by date and guests |
 | `GET /api/hotels/{hotelId}/rooms` | Get all rooms in a hotel               |
 | `POST /book`                      | Book a room with full Booking model    |
-| `POST /`                          | Book a room via BookingDTO             |
 | `GET /{reference}`                | Get booking by reference               |
 | `POST /seed`                      | Seed the database                      |
 | `POST /reset`                     | Clear all data                         |
